@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.login.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/progress_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:elevation="8dp"
+        android:background="@color/colorLoginScreen">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="50">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/login"
+                    app:srcCompat="@drawable/ic_policeman"
+                    app:layout_constraintBottom_toTopOf="@+id/text_sign_in"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="bottom"
+                    android:text="@string/sign_in_text"
+                    android:textSize="@dimen/main_text_size"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_sign_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="50">
+
+            <Button
+                android:id="@+id/button_sign_in_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingStart="@dimen/padding"
+                android:paddingEnd="@dimen/padding"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:text="@string/login"
+                android:textSize="@dimen/main_text_size"
+                android:layout_marginStart="@dimen/exam_margin"
+                android:layout_marginEnd="@dimen/exam_margin"
+                android:drawableStart="@drawable/ic_search" />
+
+            <Button
+                android:id="@+id/button_sign_in_vk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding"
+                android:paddingEnd="@dimen/padding"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:layout_marginTop="@dimen/exam_margin"
+                android:layout_marginStart="@dimen/exam_margin"
+                android:layout_marginEnd="@dimen/exam_margin"
+                android:textSize="@dimen/main_text_size"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:drawableStart="@drawable/ic_vk"
+                android:background="#4D76A1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

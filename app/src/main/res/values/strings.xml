@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">login</string>
+
+    <string name="login">Войти</string>
+    <string name="sign_in_text">Войдите для синхронизации ваших устройств и учёта мировой статистики.</string>
+    <string name="sign_failed">Попытка входа неудачна</string>
+    <string name="you_are_not_sign_in">Вы вошли, как гость</string>
+    <string name="auth_failure">Ошибка аутентификации</string>
+
+    <string name="dialog_guest_title">Перенести существующий прогресс с гостевого пользователя?</string>
+    <string name="dialog_guest_ok">Да</string>
+    <string name="dialog_guest_cancel">Нет</string>
+
+    <string name="sync_error">Ошибка синхронизации</string>
+
+    <string name="vk_version">5.92</string>
+    <integer name="com_vk_sdk_AppId" translatable="false">0</integer>
+</resources>
